@@ -1,0 +1,87 @@
+#slide {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+#slide .slide-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+}
+
+#slide .slide-list div {
+    flex-grow:0;
+    flex-shrink:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.handler {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 100%;
+}
+
+.handler span {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.handler span:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.handler span:first-child {
+    left: 10px;
+}
+
+.handler span:last-child {
+    right: 10px;
+}
+
+.hint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #a9a8a8;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #cccccc;
+}
+
+.dot-select {
+    background-color: #ffffff;
+}
